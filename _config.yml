@@ -23,6 +23,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Mail, icon: envelope, url: "mailto:trecvord@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/trecvord"}
   - {title: Twitter, icon: twitter, url: "https://twitter.com/rkholmurotov"}
+  - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/rakhmatjon-kholmurotov-7435b21a5/"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
