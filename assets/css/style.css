@@ -1,6 +1,6 @@
 p {
     font-size: 24;
-    background-color: rgb(18, 196, 18);
+    background: linear-gradient(71deg, #171717 22%, #00ff91 100%);
 }
 
 .container {
