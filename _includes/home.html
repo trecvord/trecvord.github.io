@@ -1,37 +1,26 @@
 {%- assign posts = paginator.posts | default: site.posts -%}
-{% for post in posts %}
-  <article class="post-excerpt">
-    <!-- Display post image if available -->
-    {% if post.image %}
-      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-image">
-    {% endif %}
-
-    <!-- Include meta information -->
-    {% include meta.html post=post preview=true %}
-
-    <!-- Post excerpt -->
-    <p>{{ post.excerpt }}</p>
-
-    <!-- Read more link -->
-    <div class="read-more">
-      <a href="{{ post.url | relative_url }}">Read More</a>
-    </div>
-  </article>
-{% endfor %}
+<section class="post-list">
+  {% for post in posts %}
+    <article class="post-excerpt">
+      {% include meta.html post=post preview=true %}
+      <p>{{ post.excerpt }}</p>
+      <div class="read-more">
+        <a href="{{ post.url | relative_url }}">Read More</a>
+      </div>
+    </article>
+  {% endfor %}
+</section>
 
 {% if paginator.total_pages > 1 %}
   <footer class="pagination-footer">
-    <!-- Pagination links -->
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}" class="newer-posts">« Newer Posts</a>
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link">« Newer Posts</a>
     {% else %}
       <span class="pagination-disabled">« Newer Posts</span>
     {% endif %}
-
     <span class="pagination-info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}" class="older-posts">Older Posts »</a>
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link">Older Posts »</a>
     {% else %}
       <span class="pagination-disabled">Older Posts »</span>
     {% endif %}
