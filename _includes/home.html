@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website Title</title>
-  <!-- Link to the stylehome.css -->
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-
+<html>
+  <head>
+    <style>
+        body {
+            background: linear-gradient(71deg, #171717 22%, #00ff91 100%);
+        }
+    </style>
+  </head>
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in posts %}
   <article class="post-excerpt">
@@ -48,5 +45,4 @@
     {% endif %}
   </footer>
 {% endif %}
-</body>
 </html>
