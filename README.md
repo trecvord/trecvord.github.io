@@ -6,7 +6,7 @@ layout: page
 
 
 
-Welcome to my digital space! I'm Rakhmatjon Kholmurotov, a self-driven IT enthusiast with a passion for technology and a commitment to continuous learning. With a background in Business Administration and a strong focus on IT skills, I'm dedicated to exploring the vast world of IT, from system administration to DevOps.
+Welcome to my digital space! I'm Rakhmatjon Kholmurotov, a self-driven Cloud enthusiast with a passion for technology and a commitment to continuous learning. With a background in Business Administration and a strong focus on IT skills, I'm dedicated to exploring the vast world of IT.
 
 My journey has been shaped by self-study, hands-on projects, and a love for problem-solving. I'm enthusiastic about leveraging cutting-edge technologies and automation to enhance efficiency and drive innovation.
 
